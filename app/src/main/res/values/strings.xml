@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gerencia Frota Mobile</string>
+    <string name="login">login</string>
+    <string name="cadastro">Cadastre-se</string>
+    <string name="email">Digite seu Email</string>
+    <string name="senha">Digite sua Senha</string>
+    <string name="nome">Digite seu Nome</string>
+    <string name="cpf">Digite seu Cpf</string>
+    <string name="confirma">Confirme sua Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="ocorrencia">Abrir Ocorrencia</string>
+    <string name="sair">Sair</string>
+</resources>
