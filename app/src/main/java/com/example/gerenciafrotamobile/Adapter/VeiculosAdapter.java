@@ -29,7 +29,6 @@ public abstract class VeiculosAdapter extends RecyclerView.Adapter<VeiculosAdapt
 
         public ViewHolder(View v) {
             super(v);
-            ivVeiculo = v.findViewById(R.id.ivVeiculo);
             tvPlaca = v.findViewById(R.id.tvPlaca);
             tvMarcaModelo = v.findViewById(R.id.tvMarcaModelo);
             tvTipo = v.findViewById(R.id.tvTipo);

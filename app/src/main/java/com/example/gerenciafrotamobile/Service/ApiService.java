@@ -24,7 +24,7 @@ public interface ApiService {
     @GET("veiculos")
     Call<List<Veiculo>> listarVeiculos();
 
-    @GET("ocorrencia{id}")
+    @GET("ocorrencia/{id}")
     Call<Ocorrencia>mostraVeiculoAlugado(@Path("id") int groupId);
 
 

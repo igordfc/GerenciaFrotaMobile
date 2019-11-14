@@ -10,4 +10,6 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="ocorrencia">Abrir Ocorrencia</string>
     <string name="sair">Sair</string>
+    <string name="listaVeiculo">Lista Veículos Disponíveis</string>
+    <string name="abreOcorrrencia">Abrir Ocorrência</string>
 </resources>

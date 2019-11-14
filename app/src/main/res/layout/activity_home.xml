@@ -111,7 +111,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/txtSair"
         android:layout_width="69dp"
         android:layout_height="61dp"
         android:textSize="24sp"
@@ -130,10 +130,10 @@
         android:layout_marginEnd="48dp"
         android:text="@string/sair"
         android:textColor="#FFC107"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSair"
+        app:layout_constraintEnd_toEndOf="@+id/txtSair"
+        app:layout_constraintTop_toTopOf="@+id/txtSair"
         app:layout_constraintVertical_bias="0.551" />
 
     <TextView
@@ -145,8 +145,31 @@
         android:textColor="#FFC107"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnListaVeiculo"
+        android:layout_width="321dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="92dp"
+        android:background="#FFC107"
+        android:text="@string/listaVeiculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtM2" />
+
+    <Button
+        android:id="@+id/btnAbreOcorrencia"
+        android:layout_width="196dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="196dp"
+        android:background="#FFC107"
+        android:text="@string/abreOcorrrencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtM2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

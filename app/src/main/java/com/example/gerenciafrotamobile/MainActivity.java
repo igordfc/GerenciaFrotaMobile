@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                             final Usuario usuario = response.body();
                             String msg = String.format("Bem vindo %s!", usuario.getNome());
                             mostrarMensagem(msg);
+                            redirecionarParaHome(usuario);
                         } else {
                             mostrarMensagem(ApiSingleton.get().getMensagemErro(response.errorBody()));
                         }
