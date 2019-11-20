@@ -1,12 +1,11 @@
 package com.example.gerenciafrotamobile;
 
+import android.os.Bundle;
+import android.util.Log;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
 
 import com.example.gerenciafrotamobile.Adapter.VeiculosAdapter;
 import com.example.gerenciafrotamobile.Model.Usuario;

@@ -1,7 +1,5 @@
 package com.example.gerenciafrotamobile;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,14 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.gerenciafrotamobile.Model.Usuario;
 import com.example.gerenciafrotamobile.Service.ApiService;
 import com.example.gerenciafrotamobile.Service.ApiSingleton;
 import com.google.android.material.snackbar.Snackbar;
-import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
-import org.w3c.dom.Text;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -35,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Picasso.with(getApplication()).load(R.drawable.ic_logo).resize(256, 256).centerCrop().into(R.id.imageView);
         email = findViewById(R.id.txtEmail);
         senha = findViewById(R.id.txtSenha);
         login = findViewById(R.id.btnLogin);

@@ -1,10 +1,6 @@
 package com.example.gerenciafrotamobile.Model;
 
-import android.widget.TextView;
-
 import org.parceler.Parcel;
-
-import java.util.Date;
 
 @Parcel
 public class Ocorrencia {

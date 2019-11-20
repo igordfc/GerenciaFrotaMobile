@@ -1,7 +1,5 @@
 package com.example.gerenciafrotamobile;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,16 +8,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.gerenciafrotamobile.Model.Ocorrencia;
 import com.example.gerenciafrotamobile.Model.Usuario;
 import com.example.gerenciafrotamobile.Model.Veiculo;
 import com.example.gerenciafrotamobile.Service.ApiService;
 import com.example.gerenciafrotamobile.Service.ApiSingleton;
-import com.google.android.material.snackbar.Snackbar;
 
 import org.parceler.Parcels;
-
-import java.util.Optional;
 
 import retrofit2.Call;
 import retrofit2.Callback;
