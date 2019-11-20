@@ -32,7 +32,7 @@ public class ListaVeiculo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_veiculos);
+        setContentView(R.layout.activity_veiculo);
 
         // Exemplo de uso do Parcelable (comentado)
         Usuario usuarioLogado = Parcels.unwrap(getIntent().getParcelableExtra(EXTRA_USUARIO));

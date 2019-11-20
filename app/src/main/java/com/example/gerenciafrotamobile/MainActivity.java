@@ -14,6 +14,7 @@ import com.example.gerenciafrotamobile.Model.Usuario;
 import com.example.gerenciafrotamobile.Service.ApiService;
 import com.example.gerenciafrotamobile.Service.ApiSingleton;
 import com.google.android.material.snackbar.Snackbar;
+import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
 import org.w3c.dom.Text;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Picasso.with(getApplication()).load(R.drawable.ic_logo).resize(256, 256).centerCrop().into(R.id.imageView);
         email = findViewById(R.id.txtEmail);
         senha = findViewById(R.id.txtSenha);
         login = findViewById(R.id.btnLogin);

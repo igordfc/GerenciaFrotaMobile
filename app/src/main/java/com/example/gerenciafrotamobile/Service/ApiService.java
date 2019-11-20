@@ -3,8 +3,6 @@ package com.example.gerenciafrotamobile.Service;
 import com.example.gerenciafrotamobile.Model.Ocorrencia;
 import com.example.gerenciafrotamobile.Model.Usuario;
 import com.example.gerenciafrotamobile.Model.Veiculo;
-
-import java.security.acl.Group;
 import java.util.List;
 
 import retrofit2.Call;
@@ -18,13 +16,13 @@ public interface ApiService {
     @POST("login")
     Call<Usuario> logar(@Body Usuario credenciais);
 
-    @POST("ocorrencia")
-    Call<Ocorrencia>abrirOcorrencia(@Body Ocorrencia ocorrencia);
+    @POST("ocorrencias")
+    Call<Void>abrirOcorrencia(@Body Ocorrencia ocorrencia);
 
     @GET("veiculos")
     Call<List<Veiculo>> listarVeiculos();
 
-    @GET("ocorrencia/{id}")
+    @GET("ocorrencias/my/{id}")
     Call<Ocorrencia>mostraVeiculoAlugado(@Path("id") int groupId);
 
 

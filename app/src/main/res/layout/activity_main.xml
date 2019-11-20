@@ -19,9 +19,9 @@
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
-        android:textColor="#FFC107"
+        android:textColor="#212121"
         android:textColorHighlight="#4CAF50"
-        android:textColorHint="#FFC107"
+        android:textColorHint="#212121"
         android:textColorLink="#FFC107"
         android:textCursorDrawable="@color/colorAccent"
         android:textSize="24sp"
@@ -35,27 +35,29 @@
         android:id="@+id/btnLogin"
         android:layout_width="107dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="280dp"
         android:background="#4CAF50"
         android:text="@string/login"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="166dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:foreground="@drawable/ic_logo"
         app:layout_constraintBottom_toTopOf="@+id/txtEmail"
         app:layout_constraintCircleRadius="?attr/dialogCornerRadius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/e-garage" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_logo" />
 
     <EditText
         android:id="@+id/txtSenha"
@@ -76,7 +78,6 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 

@@ -1,5 +1,7 @@
 package com.example.gerenciafrotamobile.Model;
 
+import android.widget.TextView;
+
 import org.parceler.Parcel;
 
 import java.util.Date;
@@ -9,11 +11,11 @@ public class Ocorrencia {
 
     private Integer id;
     private String titulo;
-    private String descrição;
-    private Date inicio;
-    private Date fim;
+    private String descricao;
+    private String inicio;
+    private String fim;
     private Usuario usuario;
-    private Veiculo veículo;
+    private Veiculo veiculo;
 
     public Integer getId() {
         return id;
@@ -31,27 +33,27 @@ public class Ocorrencia {
         this.titulo = titulo;
     }
 
-    public String getDescrição() {
-        return descrição;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
-    public Date getInicio() {
+    public String getInicio() {
         return inicio;
     }
 
-    public void setInicio(Date inicio) {
+    public void setInicio(String inicio) {
         this.inicio = inicio;
     }
 
-    public Date getFim() {
+    public String getFim() {
         return fim;
     }
 
-    public void setFim(Date fim) {
+    public void setFim(String fim) {
         this.fim = fim;
     }
 
@@ -63,12 +65,12 @@ public class Ocorrencia {
         this.usuario = usuario;
     }
 
-    public Veiculo getVeículo() {
-        return veículo;
+    public Veiculo getVeiculo() {
+        return veiculo;
     }
 
-    public void setVeículo(Veiculo veículo) {
-        this.veículo = veículo;
+    public void setVeiculo(Veiculo veiculo) {
+        this.veiculo = veiculo;
     }
 
 

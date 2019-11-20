@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gerenciafrotamobile.Model.Veiculo;
 import com.example.gerenciafrotamobile.R;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -23,14 +22,16 @@ public abstract class VeiculosAdapter extends RecyclerView.Adapter<VeiculosAdapt
 
         public ImageView ivVeiculo;
         public TextView tvPlaca;
-        public TextView tvMarcaModelo;
+        public TextView tvMarca;
         public TextView tvTipo;
         public TextView tvAno;
+        public TextView tvModelo;
 
         public ViewHolder(View v) {
             super(v);
             tvPlaca = v.findViewById(R.id.tvPlaca);
-            tvMarcaModelo = v.findViewById(R.id.tvMarcaModelo);
+            tvMarca = v.findViewById(R.id.tvMarca);
+            tvModelo= v.findViewById(R.id.tvModelo);
             tvTipo = v.findViewById(R.id.tvTipo);
             tvAno = v.findViewById(R.id.tvAno);
         }
@@ -55,15 +56,11 @@ public abstract class VeiculosAdapter extends RecyclerView.Adapter<VeiculosAdapt
         final Veiculo veiculo = mDataset.get(position);
 
         holder.tvPlaca.setText(veiculo.getPlaca());
-        String marcaModelo = String.format("%s/%s",veiculo.getMarca(), veiculo.getModelo());
-        holder.tvMarcaModelo.setText(marcaModelo);
+        holder.tvMarca.setText(veiculo.getMarca());
+        holder.tvModelo.setText(veiculo.getModelo());
         holder.tvTipo.setText(veiculo.getTipo().name());
         holder.tvAno.setText(veiculo.getAno().toString());
 
-        Picasso.get().load(veiculo.getImagem())
-                .placeholder(R.drawable.ic_carregando)
-                .error(R.drawable.ic_erro)
-                .into(holder.ivVeiculo);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
